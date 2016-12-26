@@ -4,7 +4,7 @@ public class GameRunner {
 	public static void main(String[] args) 
 	{
 		Introduction.Intro();
-		startGame.firstChoices();
+		FirstNight.firstChoices();
 	}
 }
 

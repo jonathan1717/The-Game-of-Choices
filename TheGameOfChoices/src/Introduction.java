@@ -14,11 +14,13 @@ public class Introduction
 //this is just the introduction
 				p.print("\nSo to start off, what is your first name?");
 				String playerFirstName= new String(JOptionPane.showInputDialog("Please enter your first name."));
-//taking user input for first name
+//taking user input for first name and saving it for later use 
 				p.print("\nWhat is your last name?");
 				String playerLastName= new String(JOptionPane.showInputDialog("Please enter your last name."));
-//taking user input for last name
-				p.print("\nWelcome to the Game " + playerFirstName + " " + playerLastName + ".");	
+//taking user input for last name and saving it for later use
+				p.print("\nWelcome to the Game " + playerFirstName + " " + playerLastName + ".");
+				final JFrame frame = new JFrame();
+				JOptionPane.showMessageDialog(frame, "Chapter 1");
 			}
 }
 
