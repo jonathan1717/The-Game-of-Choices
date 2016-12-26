@@ -9,7 +9,8 @@ public class Introduction
 	
 		public static void Intro()
 			{
-				p.print("Hello and welcome to the Game Of Choices.  Life is based on choices and just one can change our life and the lives of the others around you.");
+				p.print("Hello and welcome to the Game Of Choices.  "
+						+ "\nLife is based on choices and just one can change our life and the lives of the others around you.");
 				p.print("\nIn this game you will decide the fate of yourself and the fate of the others around you.");
 //this is just the introduction
 				p.print("\nSo to start off, what is your first name?");

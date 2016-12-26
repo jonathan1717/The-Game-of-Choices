@@ -12,7 +12,7 @@ public class p {
 				System.out.print(s.substring(i, i+1));
 				try
 					{
-						Thread.sleep(25);
+						Thread.sleep(50);
 					}
 						catch (InterruptedException e)
 					{
