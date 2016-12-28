@@ -5,14 +5,14 @@ public class p {
 	{
 
 	}
-	public static void print(String s)    
+	public static void print(String s)     
 	{
 		for(int i = 0; i < s.length(); i++)
 			{
 				System.out.print(s.substring(i, i+1));
 				try
 					{
-						Thread.sleep(50);
+						Thread.sleep(5);
 					}
 						catch (InterruptedException e)
 					{

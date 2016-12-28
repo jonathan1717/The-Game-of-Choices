@@ -1,13 +1,11 @@
-import java.awt.*;
+import java.awt.*; 
 import java.awt.event.*;
 import java.util.Scanner;
 import javax.swing.*;
 @SuppressWarnings("unused")
 public class Introduction 
 {
-	
-	
-		public static void Intro()
+		public static void Intro() 
 			{
 				p.print("Hello and welcome to the Game Of Choices.  "
 						+ "\nLife is based on choices and just one can change our life and the lives of the others around you.");

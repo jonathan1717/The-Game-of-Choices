@@ -5,7 +5,7 @@ public class FirstNight
 	static int firstChoice;
 	static int secondaryChoice;
 	
-	public static void firstChoices()
+	public static void firstChoices() 
 	{
 		p.print("\nBang! What was that noise??  I think it came from downstairs!");
 		p.print("\nNarrator: In this game you will make the choices depending on what you would do in real life.  "
@@ -17,7 +17,7 @@ public class FirstNight
 		choice1();
 //where main game begins.  This is the first choice.
 	}
-		public static void choice1()
+		public static void choice1() 
 // Dialogue for the first choice in the game
 		{
 			
@@ -39,8 +39,7 @@ public class FirstNight
 				choice1();
 			}
 		}
-		
-		public static void choice2()
+		public static void choice2() 
 // this is the first choice results for the first choice
 //I am thinking about making different classes for different times in the story so like when the character wakes up this new morning it 
 //creates a new class.
@@ -53,39 +52,38 @@ public class FirstNight
 //this is the secondary follow up question from the answer to choice one				
 					p.print("\nI'm actually kind of scared now. Should I go get dad?");
 					p.print("\n(1) yes \n(2) no");
-					secondaryChoice= Integer.parseInt(JOptionPane.showInputDialog("Please enter your choice (1 or 2)"));
-					if (firstChoice == (1))
+					secondaryChoice= Integer.parseInt(JOptionPane.showInputDialog("Please enter your choice (1) yes or (2) no"));
+					if (secondaryChoice == (1))
 					{
 						p.print("\nOkay ya, let's go get dad.");
+						p.print("\nI went back up the creeky loud stairs and went into my parents bedroom being careful not to wake up mom.");
 						p.print("\nDad wake up! A plate fell down stairs and the door was wide open!");
 						p.print("\nDad: It's alright.  Someone probably forgot to close the door and the wind just blew the plate over.");
-						p.print("\nNow go back to be and we'll check it out in the morning.");
-						FirstMorning.morning();
+						p.print("\nNow go back to bed and we'll check it out in the morning.");
+						FirstMorning.dateForCh2();
 					}
-			
-					else if (firstChoice == (2))
+					else if (secondaryChoice == (2))
 					{
 						p.print("\nGood choice, let's not bother him and let's go back to bed.");
-							FirstMorning.morning();	
+							FirstMorning.dateForCh2();	
 					}
 					else
 					{
-						p.print("\nPease enter 1 or 2");	
+						p.print("\n(1) yes \n(2) no");	
 					}
 			}
 			else if (firstChoice == (2))
 			{
 				p.print("\nYa that's a good choice Let's just wait it out until morning and go back to sleep.");
-				FirstMorning.morning();
+				FirstMorning.dateForCh2();
 			}
 			else 
 			{ 
-				p.print("The game is broken lol");
+				p.print("Please enter 1 or 2.");
 				System.exit(0);
 			}
 //I think that it is impossible for this "else" to ever to show up, so if it ever does the game is very broke.
 		}
-		
 }
 
 
